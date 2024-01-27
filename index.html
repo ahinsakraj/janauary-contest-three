@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <!-- Home page section -->
+    <div id="homeContainer">
+        <navbar id="navbar">
+            <a href="index.html" id="logo"><img id="grad" src="./assets/Hands Graduate.png" alt=""><img
+                    src="./assets/QuizGrad.png" alt="">
+            </a>
+            <ul>
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About us</a></li>
+                <li><button id="login">Login</button></li>
+            </ul>
+        </navbar>
+        <div id="horizontal_line"></div>
+        <div id="hero">
+            <div>
+                <div id="heading">
+                    <h1>Learn</h1>
+                    <h1>new concepts</h1>
+                    <h1>for each question</h1>
+                </div>
+
+                <p>We help you prepare for exams and quizes </p>
+
+                <button>Start solving</button>
+            </div>
+            <div id="hero_image">
+                <img src="./assets/g132.png" alt="">
+            </div>
+        </div>
+        <img src="./assets/Vector 4.png" alt="">
+    </div>
+
+    <!-- quiz category section -->
+    <div style="display: none;" id="category_container">
+        <div id="category">
+            <span onclick="toggleCategory()" id="close"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                    viewBox="0 0 18 19" fill="none">
+                    <path
+                        d="M11.14 9.69289L17.3751 3.47142C17.6481 3.19834 17.8015 2.82796 17.8015 2.44176C17.8015 2.05556 17.6481 1.68518 17.3751 1.4121C17.102 1.13901 16.7317 0.985596 16.3455 0.985596C15.9594 0.985596 15.5891 1.13901 15.316 1.4121L9.09544 7.64807L2.87485 1.4121C2.6018 1.13901 2.23147 0.985596 1.84533 0.985596C1.45919 0.985596 1.08886 1.13901 0.815816 1.4121C0.542771 1.68518 0.389376 2.05556 0.389376 2.44176C0.389376 2.82796 0.542771 3.19834 0.815816 3.47142L7.05091 9.69289L0.815816 15.9144C0.679908 16.0492 0.572035 16.2096 0.498419 16.3863C0.424803 16.563 0.386902 16.7526 0.386902 16.944C0.386902 17.1355 0.424803 17.325 0.498419 17.5018C0.572035 17.6785 0.679908 17.8389 0.815816 17.9737C0.950614 18.1096 1.11099 18.2175 1.28769 18.2911C1.46439 18.3648 1.65391 18.4027 1.84533 18.4027C2.03675 18.4027 2.22628 18.3648 2.40298 18.2911C2.57967 18.2175 2.74005 18.1096 2.87485 17.9737L9.09544 11.7377L15.316 17.9737C15.4508 18.1096 15.6112 18.2175 15.7879 18.2911C15.9646 18.3648 16.1541 18.4027 16.3455 18.4027C16.537 18.4027 16.7265 18.3648 16.9032 18.2911C17.0799 18.2175 17.2403 18.1096 17.3751 17.9737C17.511 17.8389 17.6188 17.6785 17.6925 17.5018C17.7661 17.325 17.804 17.1355 17.804 16.944C17.804 16.7526 17.7661 16.563 17.6925 16.3863C17.6188 16.2096 17.511 16.0492 17.3751 15.9144L11.14 9.69289Z"
+                        fill="#D1D1D1" />
+                </svg></span>
+            <h1>Choose your favorite topic</h1>
+            <p>Select more than 5 topics to start quiz</p>
+            <!-- TagBadges of categories -->
+            <div id="badge">
+                <div class="tag">
+                    <button>General Knowledge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>Science</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>History</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>Mathematics</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>Geography</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+                <div class="tag">
+                    <button>TagBadge</button>
+                    <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            viewBox="0 0 12 13" fill="none">
+                            <path
+                                d="M2.19524 11.8101L6.18212 7.82323L10.169 11.8101L11.5109 10.4682L7.524 6.48135L11.5109 2.49447L10.169 1.15259L6.18212 5.13946L2.19524 1.15259L0.853355 2.49447L4.84023 6.48135L0.853355 10.4682L2.19524 11.8101Z"
+                                fill="white" />
+                        </svg></span>
+                </div>
+
+            </div>
+            <button>Start Quiz</button>
+        </div>
+    </div>
+
+
+    <!-- Qustions section -->
+
+    <div style="display: none;" id="question_section">
+        <div class="question_text">
+            Who wrote 'To Kill a Mockingbird'?
+        </div>
+        <div class="question_options">
+            <div class="option">
+                <p>A.</p>
+                <h2 class="sub_option">Harper Lee</h2>
+            </div>
+            <div class="option">
+                <p>B.</p>
+                <h2 class="sub_option">George Orwell</h2>
+            </div>
+            <div class="option">
+                <p>C.</p>
+                <h2 class="sub_option">Jane Austen</h2>
+            </div>
+            <div class="option">
+                <p>D.</p>
+                <h2 class="sub_option">F. Scott Fitzgerald</h2>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prevBtn"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"
+                    fill="none">
+                    <path d="M0.981087 3.50828L6.64164 0.240164L6.64164 6.7764L0.981087 3.50828Z" fill="#333333" />
+                </svg> Previous</button>
+            <div>
+                <button class="nextBtn">Next <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7"
+                        viewBox="0 0 6 7" fill="none">
+                        <path d="M5.9104 3.50807L0.24985 6.77619L0.249851 0.239954L5.9104 3.50807Z" fill="white" />
+                    </svg></button>
+                <button class="skipBtn">Skip <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8"
+                        viewBox="0 0 13 8" fill="none">
+                        <path d="M8.47961 3.79787L2.81906 7.06599L2.81906 0.529749L8.47961 3.79787Z" fill="#FCC822" />
+                        <path d="M12.5435 3.79787L6.88291 7.06599L6.88291 0.529749L12.5435 3.79787Z" fill="#FCC822" />
+                    </svg></button>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="display: none;" class="card">
+        <h1>Quiz is over</h1>
+        <h2>Your Score is : 5</h2>
+        <button>Okay</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

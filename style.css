@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&family=Montserrat:wght@400;500&family=Poppins&family=Ruda&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: white; */
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+#homeContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#navbar {
+    margin-inline: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    position: relative;
+    padding: 20px;
+}
+
+#grad {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    background-color: transparent;
+}
+
+#navbar>ul {
+    list-style: none;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+
+#navbar>ul a {
+    text-decoration: none;
+    color: #E0E0E0;
+
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#login {
+    padding: 10px;
+    padding-inline: 20px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid #FCC822;
+    color: #FCC822;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#horizontal_line {
+    height: 1px;
+    width: 93%;
+    background-color: #ECECE8;
+    position: relative;
+    left: 50px;
+}
+
+#hero {
+    width: 65vw;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#hero>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+}
+
+#hero_image {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background: url(./assets/Group\ 117.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#hero_image img {
+    background-color: transparent;
+    margin-left: 70px;
+}
+
+#homeContainer>img {
+    width: 30vw;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+}
+
+#heading>h1 {
+    font-size: 3rem;
+}
+
+#heading+p {
+    height: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #828282;
+    padding-left: 20px;
+    border-left: 5px solid #333333;
+}
+
+
+
+#hero>div>button {
+    padding: 10px;
+    padding-inline: 20px;
+    font-size: 1.2rem;
+    background: linear-gradient(95deg, #FCC822 0%, #FFCD2E 100%);
+    box-shadow: 0px 10.45px 23.223px -6.967px #FBE18F;
+    color: white;
+    border: none;
+}
+
+/* Category section  */
+
+#category_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #665e5e4f;
+
+}
+
+#category {
+    width: 55vw;
+    background-color: white;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    border-radius: 5px;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#category>h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#category>p {
+    font-size: 1.2rem;
+}
+
+#badge {
+    margin-top: 10px;
+    display: flex;
+    width: 85%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag>button {
+    border: none;
+    font-weight: bolder;
+    background-color: #D1D1D1;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.tag>span {
+    /* height: 100%; */
+    width: 30px;
+}
+
+.tag>span>svg {
+    cursor: pointer;
+    background-color: #333333;
+    width: 100%;
+    height: 100%;
+}
+
+
+#category>button {
+    margin-top: 20px;
+    border: none;
+    background: linear-gradient(95deg, #FCC822 0%, #FFCD2E 100%);
+    box-shadow: 0px 10.45px 23.223px -6.967px #FBE18F;
+    font-size: 1.2rem;
+    padding: 10px;
+    padding-inline: 20px;
+
+}
+
+
+/* question section */
+
+#question_section {
+    width: 100vw;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.question_text {
+    background-color: #FCC822;
+    width: 100vw;
+    min-height: 100px;
+    padding-inline: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: white;
+}
+
+.question_options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: #D1D1D1;
+    min-width: 250px;
+    min-height: 100px;
+    margin-top: 10px;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: #FCC822;
+}
+
+.option>h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    /* padding-inline: 0px; */
+}
+
+.navigation>div {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation button {
+    border: none;
+}
+
+.prevBtn {
+    padding: 10px;
+    padding-inline: 20px;
+    background: linear-gradient(95deg, #D1D1D1 0%, #D1D1D1 100%);
+    box-shadow: 0px 5.806px 23.223px -6.967px #D1D1D1;
+}
+
+.nextBtn {
+    padding: 10px;
+    padding-inline: 20px;
+    background: linear-gradient(95deg, #FCC822 0%, #FFCD2E 100%);
+    box-shadow: 0px 5.806px 23.223px -6.967px #FBE18F;
+    color: white;
+}
+
+.skipBtn {
+    background-color: transparent;
+    color: #FCC822;
+}
+
+
+/* Final score section */
+
+.score{
+    text-align: center;
+    background-color: #FCC822;
+    width: 200px;
+    padding: 5px;
+    margin-inline: auto;
+    margin-bottom: 60px;
+}
+
+
+/* card for indicating the quiz is over  */
+
+
+.card{
+    position: fixed;
+    top: 10px;
+    left:40%;
+    right: 40%;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(224, 255, 255, 0.859);
+}
+
+.card>button{
+    padding: 5px;
+    padding-inline: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-inline-start:70% ;
+}
